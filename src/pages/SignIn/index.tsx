@@ -1,4 +1,5 @@
 import React from  'react'
+import {Link} from 'react-router-dom'
 import {FiHeart} from 'react-icons/fi'
 import {Container, Content, Background, ContainerText, Text} from './styles'
 
@@ -6,7 +7,7 @@ import Input from '../../components/Input'
 import Button from '../../components/Button'
 
 
-const Signin: React.FC = () => {
+const SignIn: React.FC = () => {
     return (
     <Container>
         <Background />
@@ -18,21 +19,22 @@ const Signin: React.FC = () => {
                 <Input name="password" type="password" placeholder="Senha"/>
                 
                 <ContainerText>
-                <h2>lembrar-me</h2>
-                <a href="forgot">Esquce minha senha</a>
+                    
+                    <input type="checkbox"/>
+                    <h2>lembrar-me</h2>
+                    <Link to="/forgot">Esquce minha senha</Link>
                 </ContainerText>
                 
                 <Button type="submit">Entrar</Button>
-
             </form>
 
             <Text>
             <h2>Naõ tem conta?</h2>
-            <a href="login">
+            <Link to="/register">
                 Cadastre-se
-            </a>
+            </Link>
             <h3>
-                é de graça < FiHeart size={20} color="#000"/>
+                é de graça < FiHeart size={14} style={{marginLeft: 8}} color="#8257E5"/>
             </h3>
 
             </Text>
@@ -41,4 +43,4 @@ const Signin: React.FC = () => {
     </Container>
 )
 }
-export default Signin
+export default SignIn

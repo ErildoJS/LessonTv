@@ -39,10 +39,25 @@ export const Content = styled.div`
 
 export const ContainerText = styled.div`
     display: flex;
-    justify-content: space-between;
-    margin-top: 24px;
+    margin: 24px 0 40px 0;
+    align-items: center;
+    justify-content: start;
+
+        input {
+            margin-right: 16px;
+            width: 19px;
+            height: 19px;
+            top: 472px;
+            left: 928px;
+            border-radius: 6px;
+
+            &:checked {
+                background-color: #04D361;
+            }
+        }
 
         h2 {
+            margin-right: 72px;
             font-family: Poppins;
             font-style: normal;
             font-weight: normal;
@@ -66,7 +81,7 @@ export const ContainerText = styled.div`
 
 export const Text = styled.div`
     h2 {
-        position: absolute;
+    position: absolute;
     width: 129px;
     height: 52px;
     left: 850px;
@@ -83,44 +98,41 @@ export const Text = styled.div`
     
     a {
         position: absolute;
-    width: 129px;
-    height: 52px;
-    left: 850px;
-    top: 600px;
+        width: 129px;
+        height: 52px;
+        left: 850px;
+        top: 600px;
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-
-
-    text-decoration-line: underline;
-
-
-    color: #6A6180;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration-line: underline;
+        color: #6A6180;
     }
 
     h3 {
+        display: flex;
         position: absolute;
-    width: 100px;
-    height: 20px;
-    right: 150px;
-    top: 590px;
+        width: 100px;
+        height: 20px;
+        right: 150px;
+        top: 590px;
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 20px;
-    color: #9C98A6;
-    display: flex;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #9C98A6;
     }
 
     
 `
 export const Background = styled.div`
     flex: 1;
+    background-color: #8257E5;
     background: url(${Proff});
     background-size: cover;
 

@@ -1,4 +1,5 @@
-import React, {useCallback, useRef} from  'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 //import {FiArrowLeft, FiMail, FiUser, FiLock} from 'react-icons/fi'
 
 import Input from '../../components/Input'
@@ -25,9 +26,9 @@ const SignUp: React.FC = () => {
                 <Button type="submit">Entrar</Button>
             </form>
 
-            <a href="login">
+            <Link to="/">
                 Voltar Para logon
-            </a>
+            </Link>
         </Content>
     </Container>
     )

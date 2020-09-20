@@ -11,7 +11,7 @@ const Signin: React.FC = () => {
             <Header>
                 <img src="https://avatars0.githubusercontent.com/u/52578096?s=460&u=d233e09f38650572379a534f8fa22788e4aa42bf&v=4" alt="name"/>
                 <p>ErildoJS</p>
-                <a href="">
+                <a href="/profile">
                     <FiPower />
                 </a>
             </Header>
@@ -24,7 +24,7 @@ const Signin: React.FC = () => {
             </LogoTwo>
 
             <Main>
-                <p>Seja bem vindo <br /><a href="">O que deseja fazer?</a></p>
+                <p>Seja bem vindo <br /><a href="/">O que deseja fazer?</a></p>
             </Main>
 
             <MainTex>
